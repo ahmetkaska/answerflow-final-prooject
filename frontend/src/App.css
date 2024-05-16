@@ -1,0 +1,414 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar menu items */
+.navbar-box {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-all-items {
+  width: 100%;
+
+}
+
+.navbar-menu-items {
+  margin-left: 10%;
+}
+
+
+.tags {
+  text-decoration: none!important;
+  color: blue;
+  cursor: pointer;
+}
+
+.tags:hover{
+  transition: all 0.2s ease-in;
+  color: red;
+}
+
+
+/* firstPage css*/
+
+#main-container {
+  margin-top: 0.2%;
+  display: flex;
+  width: 100%;
+}
+
+#main-left-container {
+  width: 30%;
+  height: auto;
+}
+
+#main-left-header {
+  margin-top: 20%;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Alice';
+  color: #212529;
+  text-align: center;
+}
+
+#main-left-text {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-weight: 100;
+  font-family: 'Amiri';
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+
+#main-right-container {
+  width: 70%;
+  height: auto;
+}
+
+#slider-one {
+  width: 100%;
+}
+
+/* Responsive Navbar */
+
+@media (max-width: 821px) {
+  #main-container {
+      flex-direction: column-reverse;
+  }
+
+  #main-left-container {
+      width: 100%;
+      height: auto;
+  }
+
+  #main-right-container {
+      width: 100%;
+      height: auto;
+  }
+
+}
+
+@media (max-width: 767px) { 
+  #main-left-header {
+      font-size: 2rem;
+  }
+
+  #main-left-text {
+      font-size: 1.2rem;
+  }
+}
+
+
+/* Section */
+
+#about-page-container {
+  margin-top: 0.2%;
+  display: flex;
+  background: linear-gradient(-45deg, #219cd9, #FFF);
+}
+
+
+#left-container {
+  padding-top: 2%;
+  width: 50%;
+  height: auto;
+  animation: shake .5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.telephone {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#right-container {
+  width: 50%;
+  height: auto;
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-right {
+  0% {
+      transform: translateX(200px);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+#sectıon-header {
+  letter-spacing: 1.5px;
+  font-size: 4rem;
+  color: white;
+  font-family: 'Amiri';
+  text-align: center;
+}
+
+#section-text {
+  width: 60%;
+  display: inline-block;
+  position: relative;
+  top:0%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  text-align: justify;
+  font-size: 2rem;
+  font-family: 'Alice';
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  line-height: 2rem;
+  color: #212529;
+}
+
+
+
+
+
+/* How Works */
+
+#how-works-container {
+  padding-top: 3%;
+  width: 100%;
+  height: auto;
+  background:  linear-gradient(-45deg,#1976d2,#219cd9);
+  color: white;
+}
+
+#how-works-header {
+  text-align: center;
+  font-family: 'Alice';
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 100;
+}
+
+#how-works-small-header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  font-family: 'Amiri';
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 100;
+}
+
+#how-works-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 75%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.how-works-card-container {
+  padding: 1%;
+  width: 25%;
+  height: auto;
+  
+}
+
+.how-works-card-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3rem;
+  transition: all .5s ease-in-out;
+  color: white;
+  
+}
+
+.how-works-card-icon:hover {
+  transform: scale(1.5);
+}
+
+.how-works-card-header {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Amiri';
+  font-weight: 100;
+}
+
+.how-works-card-small-header {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Amiri';
+  font-weight: 100;
+}
+
+ /* Footer */
+
+ #contact-container {
+  display: flex; 
+}
+
+#contact-left-container {
+  width: 60%;
+  height: auto;
+}
+
+#all-icon {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact-left-header {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Amiri';
+  font-weight: 200;
+}
+
+#item-list {
+  width: 50%;
+  list-style-type: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-list-link {
+  color: black;
+  text-decoration: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  transition: all .5s ease-in;
+}
+
+.item:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/*
+.item-icon {
+ 
+}
+*/
+
+.item-text {
+  font-size: 2rem;
+  font-family: 'Amiri';
+  font-weight: 200;
+  margin-left: 5%;
+}
+
+#location-fsm {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 18rem;
+}
+
+
+#contact-right-container {
+  padding-top: 1%;
+  width: 40%;
+  height: auto;
+}
+
+
+
+#media {
+  display: block;
+  margin-left: auto;
+  width: 90%;
+}
+
+.btn-update {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.creat-post {
+  background-color: #1976d2!important;
+  margin-right: 20px!important;
+}
+
+.textarea {
+  width: 90%!important;
+}
+
+.div-edit-delete {
+  display: flex;
+  margin-left: auto;
+}
+
+.comment-user-name {
+  color: blue;
+}

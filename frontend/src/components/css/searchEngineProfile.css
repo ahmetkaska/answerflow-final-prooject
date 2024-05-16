@@ -1,0 +1,32 @@
+
+/* Search Engine */
+.search-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5%;
+  }
+  
+  .search-input {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Sol taraftaki köşeler yuvarlak */
+    outline: none;
+    width: 200px; /* Giriş alanının genişliği */
+  }
+  
+  .search-button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0; /* Sağ taraftaki köşeler yuvarlak */
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
